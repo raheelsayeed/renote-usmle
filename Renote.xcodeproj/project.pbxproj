@@ -1,0 +1,545 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D40B489825DCCBFC00336429 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D40B489725DCCBFC00336429 /* WidgetKit.framework */; };
+		D40B489A25DCCBFC00336429 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D40B489925DCCBFC00336429 /* SwiftUI.framework */; };
+		D40B489D25DCCBFC00336429 /* RenoteWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = D40B489C25DCCBFC00336429 /* RenoteWidget.swift */; };
+		D40B48A025DCCBFD00336429 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D40B489F25DCCBFD00336429 /* Assets.xcassets */; };
+		D40B48A225DCCBFD00336429 /* RenoteWidget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = D40B489E25DCCBFC00336429 /* RenoteWidget.intentdefinition */; };
+		D40B48A325DCCBFD00336429 /* RenoteWidget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = D40B489E25DCCBFC00336429 /* RenoteWidget.intentdefinition */; };
+		D40B48A625DCCBFD00336429 /* RenoteWidgetExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = D40B489625DCCBFC00336429 /* RenoteWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		D40B48AE25DF213B00336429 /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = D40B48AD25DF213B00336429 /* Note.swift */; };
+		D40B48B225DF21A300336429 /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = D40B48AD25DF213B00336429 /* Note.swift */; };
+		D40B48D825E075BF00336429 /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D40B48D725E075BF00336429 /* WebView.swift */; };
+		D4E2039825DC8A3700B9FF5D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4E2039725DC8A3700B9FF5D /* AppDelegate.swift */; };
+		D4E2039A25DC8A3700B9FF5D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4E2039925DC8A3700B9FF5D /* SceneDelegate.swift */; };
+		D4E2039C25DC8A3700B9FF5D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4E2039B25DC8A3700B9FF5D /* ContentView.swift */; };
+		D4E2039E25DC8A3900B9FF5D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D4E2039D25DC8A3900B9FF5D /* Assets.xcassets */; };
+		D4E203A125DC8A3900B9FF5D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D4E203A025DC8A3900B9FF5D /* Preview Assets.xcassets */; };
+		D4E203A425DC8A3900B9FF5D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D4E203A225DC8A3900B9FF5D /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D40B48A425DCCBFD00336429 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D4E2038C25DC8A3700B9FF5D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D40B489525DCCBFC00336429;
+			remoteInfo = RenoteWidgetExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		D4E203C025DC8B0200B9FF5D /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				D40B48A625DCCBFD00336429 /* RenoteWidgetExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		D40B489625DCCBFC00336429 /* RenoteWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = RenoteWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		D40B489725DCCBFC00336429 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		D40B489925DCCBFC00336429 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		D40B489C25DCCBFC00336429 /* RenoteWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RenoteWidget.swift; sourceTree = "<group>"; };
+		D40B489E25DCCBFC00336429 /* RenoteWidget.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = RenoteWidget.intentdefinition; sourceTree = "<group>"; };
+		D40B489F25DCCBFD00336429 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D40B48A125DCCBFD00336429 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D40B48AD25DF213B00336429 /* Note.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
+		D40B48BD25E01E3500336429 /* Renote.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Renote.entitlements; sourceTree = "<group>"; };
+		D40B48C725E01E6E00336429 /* RenoteWidgetExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = RenoteWidgetExtension.entitlements; sourceTree = "<group>"; };
+		D40B48D725E075BF00336429 /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
+		D4E2039425DC8A3700B9FF5D /* Renote.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Renote.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D4E2039725DC8A3700B9FF5D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D4E2039925DC8A3700B9FF5D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		D4E2039B25DC8A3700B9FF5D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		D4E2039D25DC8A3900B9FF5D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D4E203A025DC8A3900B9FF5D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		D4E203A325DC8A3900B9FF5D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D4E203A525DC8A3900B9FF5D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D4E203B125DC8B0200B9FF5D /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D40B489325DCCBFC00336429 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D40B489A25DCCBFC00336429 /* SwiftUI.framework in Frameworks */,
+				D40B489825DCCBFC00336429 /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D4E2039125DC8A3700B9FF5D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D40B489B25DCCBFC00336429 /* RenoteWidget */ = {
+			isa = PBXGroup;
+			children = (
+				D40B489C25DCCBFC00336429 /* RenoteWidget.swift */,
+				D40B489E25DCCBFC00336429 /* RenoteWidget.intentdefinition */,
+				D40B489F25DCCBFD00336429 /* Assets.xcassets */,
+				D40B48A125DCCBFD00336429 /* Info.plist */,
+			);
+			path = RenoteWidget;
+			sourceTree = "<group>";
+		};
+		D4E2038B25DC8A3700B9FF5D = {
+			isa = PBXGroup;
+			children = (
+				D40B48C725E01E6E00336429 /* RenoteWidgetExtension.entitlements */,
+				D4E2039625DC8A3700B9FF5D /* Renote */,
+				D40B489B25DCCBFC00336429 /* RenoteWidget */,
+				D4E203B025DC8B0200B9FF5D /* Frameworks */,
+				D4E2039525DC8A3700B9FF5D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D4E2039525DC8A3700B9FF5D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D4E2039425DC8A3700B9FF5D /* Renote.app */,
+				D40B489625DCCBFC00336429 /* RenoteWidgetExtension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D4E2039625DC8A3700B9FF5D /* Renote */ = {
+			isa = PBXGroup;
+			children = (
+				D40B48BD25E01E3500336429 /* Renote.entitlements */,
+				D4E2039725DC8A3700B9FF5D /* AppDelegate.swift */,
+				D40B48AD25DF213B00336429 /* Note.swift */,
+				D40B48D725E075BF00336429 /* WebView.swift */,
+				D4E2039925DC8A3700B9FF5D /* SceneDelegate.swift */,
+				D4E2039B25DC8A3700B9FF5D /* ContentView.swift */,
+				D4E2039D25DC8A3900B9FF5D /* Assets.xcassets */,
+				D4E203A225DC8A3900B9FF5D /* LaunchScreen.storyboard */,
+				D4E203A525DC8A3900B9FF5D /* Info.plist */,
+				D4E2039F25DC8A3900B9FF5D /* Preview Content */,
+			);
+			path = Renote;
+			sourceTree = "<group>";
+		};
+		D4E2039F25DC8A3900B9FF5D /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				D4E203A025DC8A3900B9FF5D /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		D4E203B025DC8B0200B9FF5D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D4E203B125DC8B0200B9FF5D /* NotificationCenter.framework */,
+				D40B489725DCCBFC00336429 /* WidgetKit.framework */,
+				D40B489925DCCBFC00336429 /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D40B489525DCCBFC00336429 /* RenoteWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D40B48A925DCCBFD00336429 /* Build configuration list for PBXNativeTarget "RenoteWidgetExtension" */;
+			buildPhases = (
+				D40B489225DCCBFC00336429 /* Sources */,
+				D40B489325DCCBFC00336429 /* Frameworks */,
+				D40B489425DCCBFC00336429 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RenoteWidgetExtension;
+			productName = RenoteWidgetExtension;
+			productReference = D40B489625DCCBFC00336429 /* RenoteWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		D4E2039325DC8A3700B9FF5D /* Renote */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D4E203A825DC8A3900B9FF5D /* Build configuration list for PBXNativeTarget "Renote" */;
+			buildPhases = (
+				D4E2039025DC8A3700B9FF5D /* Sources */,
+				D4E2039125DC8A3700B9FF5D /* Frameworks */,
+				D4E2039225DC8A3700B9FF5D /* Resources */,
+				D4E203C025DC8B0200B9FF5D /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D40B48A525DCCBFD00336429 /* PBXTargetDependency */,
+			);
+			name = Renote;
+			productName = Renote;
+			productReference = D4E2039425DC8A3700B9FF5D /* Renote.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D4E2038C25DC8A3700B9FF5D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1160;
+				ORGANIZATIONNAME = "Medical Gear";
+				TargetAttributes = {
+					D40B489525DCCBFC00336429 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					D4E2039325DC8A3700B9FF5D = {
+						CreatedOnToolsVersion = 11.6;
+					};
+				};
+			};
+			buildConfigurationList = D4E2038F25DC8A3700B9FF5D /* Build configuration list for PBXProject "Renote" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D4E2038B25DC8A3700B9FF5D;
+			productRefGroup = D4E2039525DC8A3700B9FF5D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D4E2039325DC8A3700B9FF5D /* Renote */,
+				D40B489525DCCBFC00336429 /* RenoteWidgetExtension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D40B489425DCCBFC00336429 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D40B48A025DCCBFD00336429 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D4E2039225DC8A3700B9FF5D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D4E203A425DC8A3900B9FF5D /* LaunchScreen.storyboard in Resources */,
+				D4E203A125DC8A3900B9FF5D /* Preview Assets.xcassets in Resources */,
+				D4E2039E25DC8A3900B9FF5D /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D40B489225DCCBFC00336429 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D40B489D25DCCBFC00336429 /* RenoteWidget.swift in Sources */,
+				D40B48A225DCCBFD00336429 /* RenoteWidget.intentdefinition in Sources */,
+				D40B48B225DF21A300336429 /* Note.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D4E2039025DC8A3700B9FF5D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D40B48AE25DF213B00336429 /* Note.swift in Sources */,
+				D4E2039825DC8A3700B9FF5D /* AppDelegate.swift in Sources */,
+				D4E2039A25DC8A3700B9FF5D /* SceneDelegate.swift in Sources */,
+				D40B48D825E075BF00336429 /* WebView.swift in Sources */,
+				D4E2039C25DC8A3700B9FF5D /* ContentView.swift in Sources */,
+				D40B48A325DCCBFD00336429 /* RenoteWidget.intentdefinition in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D40B48A525DCCBFD00336429 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D40B489525DCCBFC00336429 /* RenoteWidgetExtension */;
+			targetProxy = D40B48A425DCCBFD00336429 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D4E203A225DC8A3900B9FF5D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D4E203A325DC8A3900B9FF5D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D40B48A725DCCBFD00336429 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CODE_SIGN_ENTITLEMENTS = RenoteWidgetExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PRSWRAABE7;
+				INFOPLIST_FILE = RenoteWidget/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.smartddx.renote.usmle.RenoteWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D40B48A825DCCBFD00336429 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CODE_SIGN_ENTITLEMENTS = RenoteWidgetExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PRSWRAABE7;
+				INFOPLIST_FILE = RenoteWidget/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.smartddx.renote.usmle.RenoteWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		D4E203A625DC8A3900B9FF5D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D4E203A725DC8A3900B9FF5D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D4E203A925DC8A3900B9FF5D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Renote/Renote.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Renote/Preview Content\"";
+				DEVELOPMENT_TEAM = PRSWRAABE7;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = Renote/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.smartddx.renote.usmle;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D4E203AA25DC8A3900B9FF5D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Renote/Renote.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Renote/Preview Content\"";
+				DEVELOPMENT_TEAM = PRSWRAABE7;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = Renote/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.smartddx.renote.usmle;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D40B48A925DCCBFD00336429 /* Build configuration list for PBXNativeTarget "RenoteWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D40B48A725DCCBFD00336429 /* Debug */,
+				D40B48A825DCCBFD00336429 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D4E2038F25DC8A3700B9FF5D /* Build configuration list for PBXProject "Renote" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D4E203A625DC8A3900B9FF5D /* Debug */,
+				D4E203A725DC8A3900B9FF5D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D4E203A825DC8A3900B9FF5D /* Build configuration list for PBXNativeTarget "Renote" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D4E203A925DC8A3900B9FF5D /* Debug */,
+				D4E203AA25DC8A3900B9FF5D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D4E2038C25DC8A3700B9FF5D /* Project object */;
+}
